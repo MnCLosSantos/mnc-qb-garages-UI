@@ -1,63 +1,24 @@
 # qb-garages
 
-**Public Garages**
-* Park owned cars in public garages.
-* You can only parks vehicles that you own in public garages. 
-
+# **Old UI**
 ![image](https://github.com/qbcore-framework/qb-garages/assets/57848836/b56344ea-a902-4c07-9ae6-4984486648d2)
 
-**House Garages**
-* Park owned cars in house garages. To add a house garage, you must have the realestate job and do /addgarage.
-* You can only parks vehicles from persons that have the key in a house garage. 
-* You can take every vehicle from the house garages to which you have the key. 
-* You can only parks ground vehicles in house garages. 
-
-**Gang Garages**
-* Allows for gangs to have their own garages.
-* You can parks every vehicle that is owned by gang members in gang garages. 
-* You can take every vehicle from the gang garages. 
-
-**Job Garages**
-* Allows jobs to have garage specific.
-* You can parks every vehicle that is owned by someone in job garages. 
-* You can take every vehicle from the job garages. 
-
-**Depot Garages**
-* Allows depot cars to be retreived from here. Cops can do /depot [price] to send a car to the depot.
-
-**Auto Respawn Config**
-* If set to true, cars that are currently outside will be placed in the last garage used.
-* If set to false, cars that are currently outside will be placed in the depot.
-
-**Shared garages Config**
-* If set to true, Gang and job garages are shared.
-* If set to false, Gang and Job garages are personal.
-
-**Configurations**
-* You can only parks ground vehicles in garages of type "car" in config. 
-* You can only parks water vehicles in garages of type "sea" in config. 
-* You can only parks air vehicles in garages of type "air" in config. 
-* Vehicle types and jobs or gang can be mixed in config.
-
-**Blips and names**
-* Blips and names are modifiable for each garage. 
-
-
-# License
-
-    QBCore Framework
-    Copyright (C) 2021 Joshua Eger
-
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <https://www.gnu.org/licenses/>
-
+# **New UIs**
+<img width="1920" height="1080" alt="FiveM® by Cfx re - Midnight Club Los Santo's 14_08_2025 04_16_31" src="https://github.com/user-attachments/assets/ced2b58c-e0d5-48b6-9aa0-e61b8bdeb27b" />
+<img width="1920" height="1080" alt="FiveM® by Cfx re - Midnight Club Los Santo's 14_08_2025 04_33_57" src="https://github.com/user-attachments/assets/1735e257-2e81-460d-907a-a3678363d054" />
+<img width="1920" height="1080" alt="FiveM® by Cfx re - Midnight Club Los Santo's 14_08_2025 04_32_13" src="https://github.com/user-attachments/assets/99e375d2-ba9b-462e-80fe-ee7d81b855da" />
+<img width="1920" height="1080" alt="FiveM® by Cfx re - Midnight Club Los Santo's 14_08_2025 04_31_19" src="https://github.com/user-attachments/assets/8a1a0f08-7a81-460c-bc13-c7d442708a0b" />
+<img width="1920" height="1080" alt="FiveM® by Cfx re - Midnight Club Los Santo's 14_08_2025 04_30_35" src="https://github.com/user-attachments/assets/0bad6dd4-c113-40b5-96b7-53da6c670df0" />
+<img width="1920" height="1080" alt="FiveM® by Cfx re - Midnight Club Los Santo's 14_08_2025 04_29_02" src="https://github.com/user-attachments/assets/bef37486-7f7f-4433-abd1-8030e31c288b" />
+<img width="1920" height="1080" alt="FiveM® by Cfx re - Midnight Club Los Santo's 14_08_2025 04_28_06" src="https://github.com/user-attachments/assets/5ab6c81f-984d-4c84-ba4a-42d626f3c99f" />
+<img width="1920" height="1080" alt="FiveM® by Cfx re - Midnight Club Los Santo's 14_08_2025 04_26_45" src="https://github.com/user-attachments/assets/a409c0f5-390a-4b33-b241-ba4409b55254" />
+<img width="1920" height="1080" alt="FiveM® by Cfx re - Midnight Club Los Santo's 14_08_2025 04_22_54" src="https://github.com/user-attachments/assets/3b2e302d-4812-402b-852c-887089b5d750" />
+<img width="1920" height="1080" alt="FiveM® by Cfx re - Midnight Club Los Santo's 14_08_2025 04_22_30" src="https://github.com/user-attachments/assets/0e021cc1-165d-449a-9855-3b01fda6c01b" />
+<img width="1920" height="1080" alt="FiveM® by Cfx re - Midnight Club Los Santo's 14_08_2025 04_22_05" src="https://github.com/user-attachments/assets/98fa7046-cef4-40a0-b77e-ecc29c7e7f6e" />
+<img width="1920" height="1080" alt="FiveM® by Cfx re - Midnight Club Los Santo's 14_08_2025 04_21_42" src="https://github.com/user-attachments/assets/f90653a8-e499-4907-8063-38a6ce95e1b0" />
+<img width="1920" height="1080" alt="FiveM® by Cfx re - Midnight Club Los Santo's 14_08_2025 04_21_19" src="https://github.com/user-attachments/assets/64b00f44-42c6-4062-ac07-95c65d155669" />
+<img width="1920" height="1080" alt="FiveM® by Cfx re - Midnight Club Los Santo's 14_08_2025 04_20_25" src="https://github.com/user-attachments/assets/a21f610f-6003-4a2f-94e8-e73697cfe841" />
+<img width="1920" height="1080" alt="FiveM® by Cfx re - Midnight Club Los Santo's 14_08_2025 04_19_55" src="https://github.com/user-attachments/assets/41c45c14-1f34-4bea-848e-1279b7344cb7" />
+<img width="1920" height="1080" alt="FiveM® by Cfx re - Midnight Club Los Santo's 14_08_2025 04_18_50" src="https://github.com/user-attachments/assets/2c902a25-7cb1-401b-86fd-f299f8e79f92" />
+<img width="1920" height="1080" alt="FiveM® by Cfx re - Midnight Club Los Santo's 14_08_2025 04_17_57" src="https://github.com/user-attachments/assets/e545ac8e-c2f5-438f-84e7-6babd5d96dc3" />
+<img width="1920" height="1080" alt="FiveM® by Cfx re - Midnight Club Los Santo's 14_08_2025 04_17_14" src="https://github.com/user-attachments/assets/df3c175b-40ce-4ed4-bbe0-9ee66a2ba110" />
