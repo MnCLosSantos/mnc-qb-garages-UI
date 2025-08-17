@@ -8,7 +8,7 @@
 - 1 <img width="1920" height="1080" alt="FiveM® by Cfx re - Midnight Club Los Santo's 14_08_2025 04_16_31" src="https://github.com/user-attachments/assets/ced2b58c-e0d5-48b6-9aa0-e61b8bdeb27b" />
 
 
-- 2 <img width="1920" height="1080" alt="FiveM® by Cfx re - Midnight Club Los Santo's 14_08_2025 04_33_57" src="https://github.com/user-attachments/assets/1735e257-2e81-460d-907a-a3678363d054" />
+- 2 Branded <img width="1920" height="1080" alt="FiveM® by Cfx re - Midnight Club Los Santo's 14_08_2025 04_33_57" src="https://github.com/user-attachments/assets/1735e257-2e81-460d-907a-a3678363d054" />
 
 
 - 3 <img width="1920" height="1080" alt="FiveM® by Cfx re - Midnight Club Los Santo's 14_08_2025 04_32_13" src="https://github.com/user-attachments/assets/99e375d2-ba9b-462e-80fe-ee7d81b855da" />
