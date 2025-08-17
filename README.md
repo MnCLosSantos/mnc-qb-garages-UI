@@ -29,7 +29,7 @@
 - 8 <img width="1920" height="1080" alt="FiveM® by Cfx re - Midnight Club Los Santo's 14_08_2025 04_26_45" src="https://github.com/user-attachments/assets/a409c0f5-390a-4b33-b241-ba4409b55254" />
 
 
-- 9 <img width="1920" height="1080" alt="FiveM® by Cfx re - Midnight Club Los Santo's 14_08_2025 04_22_54" src="https://github.com/user-attachments/assets/3b2e302d-4812-402b-852c-887089b5d750" />
+- 9 wood <img width="1920" height="1080" alt="FiveM® by Cfx re - Midnight Club Los Santo's 14_08_2025 04_22_54" src="https://github.com/user-attachments/assets/3b2e302d-4812-402b-852c-887089b5d750" />
 
 
 - 10 <img width="1920" height="1080" alt="FiveM® by Cfx re - Midnight Club Los Santo's 14_08_2025 04_22_30" src="https://github.com/user-attachments/assets/0e021cc1-165d-449a-9855-3b01fda6c01b" />
