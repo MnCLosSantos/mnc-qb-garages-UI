@@ -97,7 +97,6 @@ body {
     border-top-right-radius: 16px;
     border-bottom-right-radius: 16px;
     background: rgba(55, 65, 81, 0.5);
-    backdrop-filter: blur(8px);
 }
 
 .vehicle-item {
