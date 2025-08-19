@@ -1,5 +1,5 @@
 # qb-garages
-- replace qb-garages html folder with this and then choose your ui by replacing the contes of style.css with the contents of the one you want.
+- replace qb-garages html folder with this and then choose your ui by replacing the contents of style.css with the contents of the one you want.
 # **Old UI**
 ![image](https://github.com/qbcore-framework/qb-garages/assets/57848836/b56344ea-a902-4c07-9ae6-4984486648d2)
 
