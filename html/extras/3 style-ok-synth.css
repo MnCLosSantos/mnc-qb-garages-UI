@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Mono:wght@400;600&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: #f1f5f9;
+    overflow: hidden;
+}
+
+.container {
+    display: none;
+    position: fixed;
+    top: 10vh;
+    left: 20vw;
+    width: 60vw;
+    height: 80vh;
+    background: rgba(15, 23, 42, 0.7);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    animation: fadeInScale 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes fadeInScale {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeOutScale {
+    from { transform: scale(1); opacity: 1; }
+    to { transform: scale(0.8); opacity: 0; }
+}
+
+.container.close {
+    animation: fadeOutScale 0.6s cubic-bezier(0.36, 0, 0.66, -0.56) forwards;
+}
+
+.main-content {
+    display: flex;
+    height: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.sidebar {
+    width: 320px;
+    background: linear-gradient(180deg, #1e293b, #2d3748);
+    padding: 24px;
+    border-right: 1px solid rgba(59, 130, 246, 0.3);
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    overflow-y: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sidebar:hover {
+    box-shadow: inset 0 0 20px rgba(59, 130, 246, 0.2);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.garage-header {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #60a5fa;
+    text-shadow: 0 0 8px rgba(96, 165, 250, 0.5);
+    letter-spacing: 0.5px;
+}
+
+.garage-logo {
+    width: 48px;
+    filter: drop-shadow(0 0 8px rgba(96, 165, 250, 0.5));
+    transition: transform 0.3s ease;
+}
+
+.garage-logo:hover {
+    transform: rotate(360deg);
+}
+
+.vehicle-table {
+    flex-grow: 1;
+    padding: 24px;
+    overflow-y: auto;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    background: rgba(30, 41, 59, 0.3);
+}
+
+.vehicle-item {
+    background: rgba(30, 41, 59, 0.7);
+    border-radius: 12px;
+    margin-bottom: 16px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    animation: slideInItem 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes slideInItem {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.vehicle-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(59, 130, 246, 0.4);
+    background: rgba(30, 41, 59, 0.9);
+}
+
+.vehicle-icon {
+    font-size: 2.5rem;
+    color: #60a5fa;
+    transition: transform 0.3s ease;
+}
+
+.vehicle-item:hover .vehicle-icon {
+    transform: scale(1.1);
+}
+
+.vehicle-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.vehicle-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: "Space Mono", monospace;
+    color: #f1f5f9;
+    letter-spacing: 0.5px;
+}
+
+.plate {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #f472b6;
+    text-shadow: 0 0 5px rgba(244, 114, 182, 0.5);
+}
+
+.mileage {
+    font-size: 0.95rem;
+    font-family: "Space Mono", monospace;
+    color: #93c5fd;
+    opacity: 0.9;
+}
+
+.stats {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+    width: 240px; /* Fixed width to ensure consistent sizing */
+}
+
+.stat {
+    width: 72px; /* Fixed width for each stat column */
+    text-align: center;
+}
+
+.label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    font-family: "Space Mono", monospace;
+    color: #93c5fd;
+    margin-bottom: 8px;
+}
+
+.progress-bar {
+    background: rgba(30, 41, 59, 0.7);
+    border-radius: 16px;
+    height: 24px;
+    width: 100%; /* Ensure full width within the fixed stat container */
+    position: relative;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    overflow: hidden;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    font-size: 0.8rem;
+    color: #f1f5f9;
+    font-weight: 600;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+.progress-bar span {
+    display: block;
+    height: 100%;
+    transition: width 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.progress-bar span.bar-green {
+    background: linear-gradient(90deg, #34d399, #10b981);
+}
+
+.progress-bar span.bar-yellow {
+    background: linear-gradient(90deg, #facc15, #f59e0b);
+}
+
+.progress-bar span.bar-red {
+    background: linear-gradient(90deg, #f87171, #ef4444);
+}
+
+.finance-drive-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-end;
+}
+
+.finance-info {
+    font-size: 0.95rem;
+    font-family: "Space Mono", monospace;
+    color: #f1f5f9;
+    background: linear-gradient(90deg, #3b82f6, #f472b6);
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.finance-info:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 16px rgba(59, 130, 246, 0.5);
+}
+
+.drive-btn {
+    font-family: "Inter", sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #f1f5f9;
+    background: green;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.drive-btn:hover {
+    background: green;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 16px rgba(0, 114, 0, 0.7);
+}
+
+.drive-btn:disabled {
+    background: #475569;
+    cursor: not-allowed;
+    box-shadow: none;
+    opacity: 0.6;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(59, 130, 246, 0.0);
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(30, 41, 59, 0.0);
+}

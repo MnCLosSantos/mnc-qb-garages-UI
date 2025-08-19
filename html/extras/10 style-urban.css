@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono:wght@400;600&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Bebas Neue", sans-serif;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.container {
+    display: none;
+    position: fixed;
+    top: 8vh;
+    left: 8vw;
+    width: 84vw;
+    height: 84vh;
+    background: rgba(33, 33, 33, 0.5);
+	background: url('https://www.transparenttextures.com/patterns/brick-wall.png') #212121;
+    border-radius: 20px;
+    border: 3px solid #ff5722;
+    box-shadow: 0 0 30px #ff5722;
+    animation: graffitiFade 0.7s ease;
+}
+
+@keyframes graffitiFade {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.container.close {
+    animation: graffitiFadeOut 0.7s ease forwards;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    background: url('https://www.transparenttextures.com/patterns/graffiti.png') rgba(255, 87, 34, 0.4);
+    border-bottom: 3px solid #ffffff;
+}
+
+.garage-header::before {
+    content: " ";
+}
+
+.garage-header {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #ffffff;
+    text-shadow: 0 0 12px #ff5722;
+}
+
+.garage-logo {
+    width: 60px;
+    filter: drop-shadow(0 0 12px #ff5722);
+}
+
+.vehicle-table {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 16px;
+    overflow-y: auto;
+    background: url('https://www.transparenttextures.com/patterns/concrete.png') rgba(33, 33, 33, 0.3);
+}
+
+.vehicle-item {
+    background: rgba(255, 87, 34, 0.4);
+    border-radius: 12px;
+    padding: 16px;
+    border: 2px solid #ffffff;
+    animation: slideFromBottom 0.5s ease;
+}
+
+@keyframes slideFromBottom {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.vehicle-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px #ff5722;
+}
+
+.vehicle-icon::before {
+    content: "\f5de"; /* Font Awesome bus icon */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+
+.vehicle-icon {
+    font-size: 2.8rem;
+    color: #ffffff;
+}
+
+.vehicle-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.vehicle-name::before {
+    content: "🚍 ";
+}
+
+.vehicle-name {
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: "Roboto Mono", monospace;
+    color: #ffffff;
+}
+
+.plate::before {
+    content: "🏷️ ";
+}
+
+.plate {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ff5722;
+}
+
+.mileage::before {
+    content: "🛤️ ";
+}
+
+.mileage {
+    font-size: 0.95rem;
+    font-family: "Roboto Mono", monospace;
+    color: #ffffff;
+}
+
+.stats {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.stat {
+    flex: 1;
+    text-align: center;
+}
+
+.label::before {
+    content: "📈 ";
+}
+
+.label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-family: "Roboto Mono", monospace;
+    color: #ffffff;
+}
+
+.progress-bar {
+    background: rgba(255, 87, 34, 0.3);
+    border-radius: 12px;
+    height: 20px;
+    position: relative;
+    border: 2px solid #ffffff;
+}
+
+.progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.8rem;
+    color: #ffffff;
+    text-shadow: 0 0 5px #ff5722;
+}
+
+.progress-bar span {
+    display: block;
+    height: 100%;
+    transition: width 0.5s ease;
+}
+
+.progress-bar span.bar-green { background: #4caf50; }
+.progress-bar span.bar-yellow { background: #ffca28; }
+.progress-bar span.bar-red { background: #ff5722; }
+
+.finance-drive-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.finance-info::before {
+    content: "💸 ";
+}
+
+.finance-info {
+    font-size: 0.9rem;
+    font-family: "Roboto Mono", monospace;
+    color: #ffffff;
+    background: #ff5722;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.finance-info:hover {
+    transform: translateY(-3px);
+}
+
+.drive-btn::before {
+    content: "🚦 ";
+}
+
+.drive-btn {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #212121;
+    background: #ffffff;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.drive-btn:hover {
+    background: #e0e0e0;
+    box-shadow: 0 0 10px #ff5722;
+}
+
+.drive-btn:disabled {
+    background: #78909c;
+    cursor: not-allowed;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff5722;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: url('https://www.transparenttextures.com/patterns/concrete.png') rgba(33, 33, 33, 0.3);
+}
